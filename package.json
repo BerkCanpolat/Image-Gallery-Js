@@ -1,0 +1,24 @@
+{
+  "name": "image-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --style=compressed sass:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerkCanpolat/Image-Gallery-Js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BerkCanpolat/Image-Gallery-Js/issues"
+  },
+  "homepage": "https://github.com/BerkCanpolat/Image-Gallery-Js#readme",
+  "devDependencies": {
+    "sass": "^1.92.1"
+  }
+}
