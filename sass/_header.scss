@@ -43,22 +43,22 @@ body {
 }
 
 .header {
-
     position: fixed;
-    position: 0;
+    top: 0;
     left: 0;
+    background-color: white;
     width: 100%;
     transition: all .2s ease;
-    z-index: 1;
-
-    &.active {
-        border-bottom: 1px solid gainsboro;
-    }
+    z-index: 5;
 
     padding: 0 2rem;
     @include display-align();
     justify-content: space-between;
 
+    &.active {
+        border-bottom: 1px solid gainsboro;
+    }
+    
     &__logo {
         font-size: 2rem;
         font-family: "Pacifico", cursive;
