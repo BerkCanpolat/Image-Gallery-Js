@@ -85,3 +85,49 @@
         }
     }
 }
+
+//Mobile First
+@media (max-width: 576px) {
+  .gallery {
+    padding: 2rem 1rem;
+
+    &__items {
+      width: 100%;
+      align-items: center;
+    }
+
+    &__list {
+      max-width: 100%;
+      margin-top: 20px;
+      columns: 1;
+      column-gap: 0;
+    }
+
+    &__item {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 0.5rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+      }
+
+      .top {
+        top: 5px;
+        right: 5px;
+
+        i {
+          padding: 0.4rem;
+          font-size: 1rem;
+        }
+      }
+
+      .bottom {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

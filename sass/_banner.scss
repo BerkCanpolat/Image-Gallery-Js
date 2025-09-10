@@ -149,3 +149,57 @@
     }
   }
 }
+
+
+//Mobile First
+@media (max-width: 576px) {
+  .banner-main {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 1rem;
+    margin-top: 4rem;
+
+    &__left {
+      width: 100%;
+      margin-bottom: 1.5rem;
+
+      .left-head {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+      }
+
+      .left-search {
+        width: 100%;
+        margin-top: 1rem;
+        padding: 0.8rem;
+      }
+    }
+
+    &__right {
+      width: 100%;
+
+      .images {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        padding-left: 12rem;
+        padding-right: 1rem;
+        scroll-padding-left: 1rem;
+
+        .img {
+          flex: 0 0 auto;
+          width: 250px;
+          height: 250px;
+          scroll-snap-align: start;
+          border-radius: 1.2rem;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+

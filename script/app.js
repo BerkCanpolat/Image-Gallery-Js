@@ -55,3 +55,15 @@ const scrollWindow = () => {
 }
 
 window.addEventListener("scroll", scrollWindow);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("menu-toggle");
+  const nav = document.getElementById("mobile-nav");
+
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("active");
+    });
+  }
+});

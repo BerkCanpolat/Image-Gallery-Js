@@ -1,10 +1,6 @@
 @use 'variables' as v;
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body {
-    height: 2000px;
-}
-
 @mixin display-align {
     display: flex;
     align-items: center;
@@ -62,6 +58,10 @@ body {
     &__logo {
         font-size: 2rem;
         font-family: "Pacifico", cursive;
+    }
+
+    &__toggle {
+        display: none
     }
 
     &__list {
@@ -195,4 +195,61 @@ body {
     }
 
 
+}
+
+//Mobile First
+@media (max-width: 576px) {
+  .header {
+    padding: 0 1rem;
+
+    &__toggle {
+      display: block;
+      font-size: 1.8rem;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-top: 1px solid gainsboro;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+
+      &.active {
+        max-height: 500px;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+      gap: .5rem;
+    }
+  }
+  
+  .header__toggle {
+    display: block;
+  }
+}
+
+@media (min-width: 577px) {
+  .header__toggle {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .header__list {
+    display: flex;
+  }
 }
