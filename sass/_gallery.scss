@@ -84,6 +84,15 @@
             bottom: 0;
         }
     }
+
+    .load-more {
+      margin-top: 1rem;
+    }
+
+    .load-more.disabled {
+      opacity: 0.6;
+    pointer-events: none;
+    }
 }
 
 //Mobile First
