@@ -16,6 +16,8 @@ A responsive web application built with **HTML, CSS, and Vanilla JavaScript** th
 
 - **Hover Effects:** Interactive hover effects on images and buttons.
 
+- **SCSS:** SCSS was used in the project.
+
 ## Tech Stack
 
 - HTML5
@@ -51,6 +53,8 @@ Bu proje, **HTML, CSS ve Vanilla JavaScript** kullanılarak yapılmış, **Pexel
 - **Mobil Uyumluluk:** Mobil cihazlar için optimize edildi (max-width: 576px).
   
 - **Hover Efektleri:** Resimler ve butonlar üzerinde interaktif hover efektleri.
+
+- **SCSS:** Projede SCSS kullanılmıştır.
 
 ## Teknolojiler
 
