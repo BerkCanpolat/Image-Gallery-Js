@@ -1,4 +1,4 @@
-# Pexels Clone Project
+ # Pexels Clone Project
 
 A responsive web application built with **HTML, CSS, and Vanilla JavaScript** that fetches and displays free stock photos using the **Pexels API**. This project was created for learning and improving front-end development skills, including working with APIs, implementing pagination, and creating interactive UI features.
 
@@ -66,7 +66,11 @@ Bu proje, **HTML, CSS ve Vanilla JavaScript** kullanılarak yapılmış, **Pexel
 
 
 
-https://github.com/user-attachments/assets/49e6b2cc-6212-4e9b-9cf1-3531bd8d826c
+
+
+
+https://github.com/user-attachments/assets/3a2d07d1-0832-495d-a5c4-3433edd7349d
+
 
 
 
