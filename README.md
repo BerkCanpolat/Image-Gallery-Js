@@ -66,4 +66,8 @@ Bu proje, **HTML, CSS ve Vanilla JavaScript** kullanılarak yapılmış, **Pexel
 
 
 
+https://github.com/user-attachments/assets/49e6b2cc-6212-4e9b-9cf1-3531bd8d826c
+
+
+
 
