@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+%btn-extended {
+    display: inline-block;
+    padding: .7rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 1.5rem
+}
+
+.btn {
+    &-secondary {
+        @extend %btn-extended;
+        color: v.$title;
+        &:hover:not(:active) {
+            background-color: v.$btn-bg-secondary;
+        }
+    }
+    &-black {
+        @extend %btn-extended;
+        background-color: v.$btn-bg-black;
+        color: v.$title-white;
+        &:hover:not(:active) {
+            opacity: .7;
+        }
+    }
+}

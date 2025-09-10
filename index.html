@@ -1,12 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE html data-theme="dark">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0d0fffe855.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <header class="header" data-header>
+        <a class="header__logo" href="#">Pexels</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item explore-menu">
+                    <a class="btn-secondary icon-btn" href="#">Explore <i class="fa-solid fa-angle-down explore-up"></i></a>
+
+                    <div class="explore-open">
+                        <div class="explore-open__item">
+                            <a href="#"><i class="fa-solid fa-globe icon-menu"></i> Discover Photos</a>
+                        </div>
+                        <div class="explore-open__item">
+                            <a href="#"><i class="fa-solid fa-rocket icon-menu"></i> Leader Board</a>
+                        </div>
+                        <div class="explore-open__item">
+                            <a href="#"><i class="fa-solid fa-medal icon-menu"></i> Challenges</a>
+                        </div>
+                        <div class="explore-open__item">
+                            <a href="#"><i class="fa-regular fa-circle-play icon-menu"></i> Free Videos</a>
+                        </div>
+                        <div class="explore-open__item">
+                            <a href="#"><i class="fa-solid fa-window-maximize icon-menu"></i> Pexels Blog</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item">
+                    <a class="btn-secondary" href="#">License</a>
+                </li>
+                <li class="header__item more-menu">
+                    <a class="btn-secondary" href="#"><i class="fa-solid fa-ellipsis"></i></a>
+
+                    <div class="more-open">
+                        <div class="more-open__item">
+                            <a href="#">Login</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Image & Video API</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Apps & Plugins</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Help Center</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Report Content</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Partnerships</a>
+                        </div>
+                        <div class="more-open__item">
+                            <a href="#">Imprint & Terms</a>
+                        </div>
+                        <div class="more-open__item hr-btn">
+                            <a href="#"> <img src="assets/us.svg" alt="">Change Language</a>
+                        </div>
+                        <div class="social-media">
+                            <div class="social-media__item">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                            <div class="social-media__item">
+                                <a href="#"><i class="fa-brands fa-threads"></i></a>
+                            </div>
+                            <div class="social-media__item">
+                                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                            </div>
+                            <div class="social-media__item">
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                            <div class="social-media__item">
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__item">
+                    <a class="btn-black btn-radius" href="#">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="script/app.js"></script>
 </body>
 </html>

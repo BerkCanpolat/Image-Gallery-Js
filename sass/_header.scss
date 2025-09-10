@@ -1,3 +1,199 @@
+@use 'variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    background-color: red;
+    height: 2000px;
+}
+
+@mixin display-align {
+    display: flex;
+    align-items: center;
+}
+
+@mixin open-menu {
+    position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            transition: all .2s ease;
+            width: 12.5rem;
+            border-radius: 1rem;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+}
+
+@mixin op-menu-js {
+    max-height: 450px;
+            padding: .5rem 0;
+}
+
+@mixin open-menu-a {
+    display: flex;
+                align-items: center;
+                padding: .7rem 1rem;
+                color: v.$title;
+                border-radius: .5rem;
+                width: 100%;
+}
+
+.header {
+
+    position: fixed;
+    position: 0;
+    left: 0;
+    width: 100%;
+    transition: all .2s ease;
+    z-index: 1;
+
+    &.active {
+        border-bottom: 1px solid gainsboro;
+    }
+
+    padding: 0 2rem;
+    @include display-align();
+    justify-content: space-between;
+
+    &__logo {
+        font-size: 2rem;
+        font-family: "Pacifico", cursive;
+    }
+
+    &__list {
+        @include display-align();
+        gap: 1rem;
+    }
+
+    &__item {
+        .btn-radius {
+            border-radius: .7rem;
+            padding: .8rem 1.3rem;
+        }
+    }
+
+    .explore-menu {
+        position: relative;
+
+        .explore-open {
+            @include open-menu();
+
+        }
+
+        .explore-menu-js {
+            @include op-menu-js();
+            // border: 1px solid black;
+        }
+    }
+
+    .more-menu {
+        position: relative;
+
+        .more-open {
+            @include open-menu();
+        }
+
+        .more-menu-js {
+            @include op-menu-js();
+        }
+    }
+
+    .explore-up {
+        transition: all .3s ease;
+        color: gray;
+        font-size: .8rem;
+    }
+
+    .icon-btn:hover .explore-up {
+        transform: rotate(180deg);
+    }
+
+    .explore-open {
+        &__item {
+            display: flex;
+            width: 11.25rem;
+
+            a {
+
+                @include open-menu-a();
+                gap: .5rem;
+
+                .icon-menu {
+                    color: #a0a0a0;
+                }
+
+                &:hover {
+                    background-color: v.$btn-bg-secondary;
+
+                    .icon-menu {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .more-open {
+        &__item {
+            display: flex;
+            width: 11.25rem;
+
+            &.hr-btn {
+                border-top: .7px solid gainsboro;
+                border-bottom: .7px solid gainsboro;
+            }
+
+            a {
+                @include open-menu-a();
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                    object-fit: contain;
+                    margin-right: 3px;
+                }
+
+                &:hover {
+                    background-color: v.$btn-bg-secondary;
+
+                    img {
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            padding: 0 5rem;
+            &__item {
+
+                width: 2.1rem;
+                a {
+                    // @include open-menu-a();
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    font-size: 1.3rem;
+                    margin-top: 1rem;
+
+                    i {
+                        color: gray;
+                        transition: all .5s ease;
+                    }
+
+                    i:hover {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+
+
 }
