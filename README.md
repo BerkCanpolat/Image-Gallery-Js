@@ -28,6 +28,8 @@ A responsive web application built with **HTML, CSS, and Vanilla JavaScript** th
   
 - Pexels API for fetching images
 
+- Live Demo; https://pexels-clone-berk.netlify.app
+
 
 
 
@@ -65,6 +67,8 @@ Bu proje, **HTML, CSS ve Vanilla JavaScript** kullanılarak yapılmış, **Pexel
 - Vanilla JavaScript (ES6)
   
 - Pexels API ile fotoğraf çekme
+
+- Canlı Demo; https://pexels-clone-berk.netlify.app
 
 
 
